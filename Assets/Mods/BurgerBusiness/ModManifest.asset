@@ -19,7 +19,7 @@ MonoBehaviour:
   AssetBundleName: burgerbusiness.unity3d
   ModAssembly: {fileID: 5897886265953266890, guid: eb06ff99a88e0944eafaa5a09b9ca0ce,
     type: 3}
-  LocalesFolder: {fileID: 0}
+  LocalesFolder: {fileID: 102900000, guid: 604c31d947cc23546bf2bf651a61f756, type: 3}
   DependenciesFolder: {fileID: 0}
   EnumsFile: {fileID: 0}
   TargetPlatforms: 3
