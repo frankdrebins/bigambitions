@@ -17,10 +17,9 @@ MonoBehaviour:
   - ba:businesstag_allowplayercreation
   - ba:businesstag_generatesrevenue
   - ba:businesstag_customersneedpaperbags
-  - ba:businesstag_allowtheft
   businessTypeName: burgerbusiness:businesstype_burgerrestaurant
   suitableBuildingType: ba:buildingtype_retail
-  simulator: {fileID: 11400000, guid: 1713e01407e04574ebcbdfca9a0fe3de, type: 2}
+  simulator: {fileID: 11400000, guid: 99cd390d55f125840b47e5c768e7401f, type: 2}
   spawnCustomers: 1
   courseRequired: 0
   minutesToCheckBeforeTheSpawnTimeInAiBusinesses: 60
@@ -36,14 +35,15 @@ MonoBehaviour:
   businessProducts:
   - itemName: burgerbusiness:itemname_classicburger
     impact: 1
+  - itemName: ba:itemname_burger
+    impact: 1
   productSources:
   - ba:businessproductsource_wholesaler
-  - ba:businessproductsource_importer
   employeePrimarySkills:
   - ba:skill_customerservice
   employeeDefaultAppearanceTags: 02000000
-  customerType: 2
-  maxAmountPerProduct: 1
+  customerType: 1
+  maxAmountPerProduct: 3
   businessRequirements:
   - {fileID: 11400000, guid: 7135a8080aa9ab043b20ac0f438b60d2, type: 2}
   - {fileID: 11400000, guid: 99f04b3bcd794ec468b24296766dceaa, type: 2}
@@ -55,6 +55,8 @@ MonoBehaviour:
     weight: 1
   - type: ba:customerdemand_interiordesign
     weight: 1
+  - type: ba:customerdemand_seating
+    weight: 1
   - type: ba:customerdemand_toilet
     weight: 1
   - type: ba:customerdemand_toiletprivacy
@@ -62,46 +64,51 @@ MonoBehaviour:
   - type: ba:customerdemand_sink
     weight: 1
   logoShapes:
-  - gift1
-  - gift2
-  - gift3
+  - fastfood1
+  - fastfood2
+  - fastfood3
+  - fastfood4
   dayFactorMultipliers:
   - dayOfWeekOrdered: 1
-    multiplier: 0.8
+    multiplier: 0.75
   - dayOfWeekOrdered: 2
-    multiplier: 0.75
-  - dayOfWeekOrdered: 3
     multiplier: 0.7
+  - dayOfWeekOrdered: 3
+    multiplier: 0.6
   - dayOfWeekOrdered: 4
-    multiplier: 0.75
+    multiplier: 0.7
   - dayOfWeekOrdered: 5
-    multiplier: 0.9
+    multiplier: 0.8
   - dayOfWeekOrdered: 6
     multiplier: 1
   - dayOfWeekOrdered: 7
-    multiplier: 0.95
+    multiplier: 0.9
   hourlyFactorMultipliers:
   - startingHour: 0
-    endingHour: 8
+    endingHour: 5
     multiplier: 0.05
-  - startingHour: 8
-    endingHour: 12
-    multiplier: 0.65
-  - startingHour: 12
-    endingHour: 17
+  - startingHour: 5
+    endingHour: 9
+    multiplier: 0.85
+  - startingHour: 9
+    endingHour: 11
+    multiplier: 0.2
+  - startingHour: 11
+    endingHour: 14
     multiplier: 1
+  - startingHour: 14
+    endingHour: 17
+    multiplier: 0.2
   - startingHour: 17
-    endingHour: 19
-    multiplier: 0.7
-  - startingHour: 19
     endingHour: 21
-    multiplier: 0.3
+    multiplier: 0.75
   - startingHour: 21
     endingHour: 24
-    multiplier: 0.05
+    multiplier: 0.1
   aliases:
   - Burgers
   - Fast Food
+  - Grill
   hasPedestriansOutside: 0
   pedestrianPool: {fileID: 0}
   hasMusicOutside: 0
