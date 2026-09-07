@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: ClassicBurger
   m_EditorClassIdentifier: 
   database: {fileID: 0}
-  tags: []
+  tags:
+  - ba:itemtag_fooddelivery
   itemName: burgerbusiness:itemname_classicburger
   type: 2
   leanBackSitAnimation: 0
-  wholesalePrice: 3.25
-  defaultMarketPrice: 11.99
-  productSalesRatio: 1
-  boxSize: 50
+  wholesalePrice: 4.75
+  defaultMarketPrice: 12.5
+  productSalesRatio: 0.75
+  boxSize: 500
   canPutInShoppingBasket: 0
   showBoxAsHandItem: 1
   defaultWorldSpaceKey: 
@@ -38,7 +39,7 @@ MonoBehaviour:
   furnitureRequirements: []
   wallMounted: 0
   snapToCeiling: 0
-  canBeGrabbed: 0
+  canBeGrabbed: 1
   stackType: 0
   itemsThatCanOverlapWith: []
   wallOverlapMargin: 0.1
@@ -54,12 +55,12 @@ MonoBehaviour:
   canPlayerDoOrder: 0
   suitableSkills: []
   icon: {fileID: 0}
-  isConsumable: 0
+  isConsumable: 1
   requiresWeighing: 0
-  consumeAnimation: 0
-  consumeSoundType: 0
+  consumeAnimation: 1
+  consumeSoundType: 18
   consumeHeldPrefabName: 
-  saturation: 0
+  saturation: 70
   energy: 0
   isAccessory: 0
   accessoryType: 0
@@ -68,10 +69,10 @@ MonoBehaviour:
   isADemandedProduct: 1
   limitDemandToNeighbourhoods: []
   isSpecialRivalOnly: 0
-  maxWholesaleOrderAmount: 3000
-  maxOrderAmountPerImporter: 15000
-  providersNeededToStartGeneratingEvents: 7
-  usingAnimation: 30
+  maxWholesaleOrderAmount: 5000
+  maxOrderAmountPerImporter: 25000
+  providersNeededToStartGeneratingEvents: 6
+  usingAnimation: 34
   playerMountPosition: {x: 0, y: 0, z: 0}
   playerMountRotation: {x: 0, y: 0, z: 0}
   playGrabSound: 0
